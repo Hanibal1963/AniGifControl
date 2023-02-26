@@ -119,7 +119,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\AniGif.bmp" />
+    <EmbeddedResource Include="AniGif.bmp" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Standard.gif" />
