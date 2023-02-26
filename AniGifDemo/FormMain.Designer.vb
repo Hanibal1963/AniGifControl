@@ -114,16 +114,17 @@ Partial Class FormMain
 		Me.AniGif1.AutoPlay = False
 		Me.AniGif1.Gif = CType(resources.GetObject("AniGif1.Gif"), System.Drawing.Bitmap)
 		Me.AniGif1.GifSizeMode = SchlumpfSoft.Controls.GifSizeMode.Normal
-		Me.AniGif1.Location = New System.Drawing.Point(13, 20)
+		Me.AniGif1.Location = New System.Drawing.Point(12, 12)
 		Me.AniGif1.Name = "AniGif1"
-		Me.AniGif1.Size = New System.Drawing.Size(183, 180)
-		Me.AniGif1.TabIndex = 0
+		Me.AniGif1.Size = New System.Drawing.Size(184, 184)
+		Me.AniGif1.TabIndex = 9
 		'
 		'FormMain
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(396, 251)
+		Me.Controls.Add(Me.AniGif1)
 		Me.Controls.Add(Me.Label3)
 		Me.Controls.Add(Me.Label2)
 		Me.Controls.Add(Me.ComboBox2)
@@ -132,7 +133,6 @@ Partial Class FormMain
 		Me.Controls.Add(Me.Button2)
 		Me.Controls.Add(Me.Button1)
 		Me.Controls.Add(Me.CheckBox1)
-		Me.Controls.Add(Me.AniGif1)
 		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
 		Me.MaximizeBox = False
 		Me.MinimizeBox = False
@@ -143,8 +143,6 @@ Partial Class FormMain
 		Me.PerformLayout()
 
 	End Sub
-
-	Friend WithEvents AniGif1 As Controls.AniGif
 	Friend WithEvents CheckBox1 As CheckBox
 	Friend WithEvents Button1 As Button
 	Friend WithEvents Button2 As Button
@@ -153,4 +151,5 @@ Partial Class FormMain
 	Friend WithEvents ComboBox2 As ComboBox
 	Friend WithEvents Label2 As Label
 	Friend WithEvents Label3 As Label
+	Friend WithEvents AniGif1 As Controls.AniGif
 End Class

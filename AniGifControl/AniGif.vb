@@ -50,8 +50,7 @@ Public Class AniGif
 
 
 	''' <summary>
-	''' Ruft einen Wert ab, der angibt, ob das Steuerelement Daten annehmen kann, 
-	''' die vom Benutzer darauf gezogen wurden, oder legt diesen fest.
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
 	''' </summary>
 	''' <remarks>
 	''' Eigenschaft ausgeblendet
@@ -85,7 +84,7 @@ Public Class AniGif
 	End Property
 
 	''' <summary>
-	''' Ruft das im Steuerelement angezeigte Hintergrundbild ab oder legt dieses fest.
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
 	''' </summary>
 	''' <remarks>
 	''' Eigenschaft ausgeblendet
@@ -102,8 +101,7 @@ Public Class AniGif
 	End Property
 
 	''' <summary>
-	''' Ruft ab oder legt fest, welches Hintergrundbildlayout gemäß der Definition 
-	''' in der ImageLayout-Enumeration verwendet wird.
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
 	''' </summary>
 	''' <remarks>
 	''' Eigenschaft ausgeblendet
@@ -120,7 +118,7 @@ Public Class AniGif
 	End Property
 
 	''' <summary>
-	''' Ruft die diesem Steuerelement zugeordnete ContextMenuStrip-Klasse ab oder legt diese fest.
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
 	''' </summary>
 	''' <remarks>
 	''' Eigenschaft ausgeblendet
@@ -137,8 +135,7 @@ Public Class AniGif
 	End Property
 
 	''' <summary>
-	''' Ruft ab oder legt fest, welche Steuerelementrahmen am übergeordneten Steuerelement angedockt sind, 
-	''' und bestimmt, wie die Größe eines Steuerelements mit dem übergeordneten Steuerelement geändert wird.
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
 	''' </summary>
 	''' <remarks>
 	''' Eigenschaft ausgeblendet
@@ -155,7 +152,7 @@ Public Class AniGif
 	End Property
 
 	''' <summary>
-	''' Ruft die Schriftart für die Anzeige von Text im Steuerelement ab oder legt diese fest.
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
 	''' </summary>
 	''' <remarks>
 	''' Eigenschaft ausgeblendet
@@ -172,7 +169,7 @@ Public Class AniGif
 	End Property
 
 	''' <summary>
-	''' Ruft die Vordergrundfarbe des Steuerelements ab oder legt diese fest.
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
 	''' </summary>
 	''' <remarks>
 	''' Eigenschaft ausgeblendet
@@ -227,9 +224,7 @@ Public Class AniGif
 	End Property
 
 	''' <summary>
-	''' Ruft einen Wert ab, der angibt, ob Elemente des Steuerelements für die Unterstützung 
-	''' von Gebietsschemas ausgerichtet sind, die von rechts nach links geschriebene Schriftarten verwenden, 
-	''' oder legt diesen fest.
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
 	''' </summary>
 	''' <remarks>
 	''' Eigenschaft ausgeblendet
@@ -246,7 +241,7 @@ Public Class AniGif
 	End Property
 
 	''' <summary>
-	''' Ruft den diesem Steuerelement zugeordneten Text ab oder legt diesen fest.
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
 	''' </summary>
 	''' <remarks>
 	''' Eigenschaft ausgeblendet
@@ -261,6 +256,150 @@ Public Class AniGif
 			MyBase.Text = value
 		End Set
 	End Property
+
+	''' <summary>
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
+	''' </summary>
+	''' <remarks>
+	''' Eigenschaft ausgeblendet
+	''' </remarks>
+	<System.ComponentModel.Browsable(False)>
+	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
+	Public Overrides Property AutoSize As Boolean
+		Get
+			Return MyBase.AutoSize
+		End Get
+		Set(value As Boolean)
+			MyBase.AutoSize = value
+		End Set
+	End Property
+
+
+	''' <summary>
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
+	''' </summary>
+	''' <remarks>
+	''' Eigenschaft ausgeblendet
+	''' </remarks>
+	<System.ComponentModel.Browsable(False)>
+	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
+	Public Overloads Property AutoSizeMode As System.Windows.Forms.AutoSizeMode
+		Get
+			Return MyBase.AutoSizeMode
+		End Get
+		Set(value As System.Windows.Forms.AutoSizeMode)
+			MyBase.AutoSizeMode = value
+		End Set
+	End Property
+
+
+	''' <summary>
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
+	''' </summary>
+	''' <remarks>
+	''' Eigenschaft ausgeblendet
+	''' </remarks>
+	<System.ComponentModel.Browsable(False)>
+	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
+	Public Overrides Property AutoScroll As Boolean
+		Get
+			Return MyBase.AutoScroll
+		End Get
+		Set(value As Boolean)
+			MyBase.AutoScroll = value
+		End Set
+	End Property
+
+
+	''' <summary>
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
+	''' </summary>
+	''' <remarks>
+	''' Eigenschaft ausgeblendet
+	''' </remarks>
+	<System.ComponentModel.Browsable(False)>
+	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
+	Public Overrides Property AutoScrollOffset As System.Drawing.Point
+		Get
+			Return MyBase.AutoScrollOffset
+		End Get
+		Set(value As System.Drawing.Point)
+			MyBase.AutoScrollOffset = value
+		End Set
+	End Property
+
+
+	''' <summary>
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
+	''' </summary>
+	''' <remarks>
+	''' Eigenschaft ausgeblendet
+	''' </remarks>
+	<System.ComponentModel.Browsable(False)>
+	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
+	Public Overloads Property AutoScrollMargin As System.Drawing.Size
+		Get
+			Return MyBase.AutoScrollMargin
+		End Get
+		Set(value As System.Drawing.Size)
+			MyBase.AutoScrollMargin = value
+		End Set
+	End Property
+
+
+	''' <summary>
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
+	''' </summary>
+	''' <remarks>
+	''' Eigenschaft ausgeblendet
+	''' </remarks>
+	<System.ComponentModel.Browsable(False)>
+	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
+	Public Overloads Property AutoScrollMinSize As System.Drawing.Size
+		Get
+			Return MyBase.AutoScrollMinSize
+		End Get
+		Set(value As System.Drawing.Size)
+			MyBase.AutoScrollMinSize = value
+		End Set
+	End Property
+
+
+	''' <summary>
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
+	''' </summary>
+	''' <remarks>
+	''' Eigenschaft ausgeblendet
+	''' </remarks>
+	<System.ComponentModel.Browsable(False)>
+	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
+	Public Overrides Property MaximumSize As System.Drawing.Size
+		Get
+			Return MyBase.MaximumSize
+		End Get
+		Set(value As System.Drawing.Size)
+			MyBase.MaximumSize = value
+		End Set
+	End Property
+
+
+	''' <summary>
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
+	''' </summary>
+	''' <remarks>
+	''' Eigenschaft ausgeblendet
+	''' </remarks>
+	<System.ComponentModel.Browsable(False)>
+	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
+	Public Overrides Property MinimumSize As System.Drawing.Size
+		Get
+			Return MyBase.MinimumSize
+		End Get
+		Set(value As System.Drawing.Size)
+			MyBase.MinimumSize = value
+		End Set
+	End Property
+
 
 #End Region
 
