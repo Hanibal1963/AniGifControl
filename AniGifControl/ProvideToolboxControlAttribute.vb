@@ -29,7 +29,7 @@ Public NotInheritable Class ProvideToolboxControlAttribute
     ''' </param>
     Public Sub New(name As String, isWpfControls As Boolean)
         If name Is Nothing Then
-            Throw New System.ArgumentException("name")
+            Throw New System.ArgumentException(Nothing, NameOf(name))
         End If
 
         Me.Name = name
@@ -70,7 +70,7 @@ Public NotInheritable Class ProvideToolboxControlAttribute
     ''' </param>
     Public Overrides Sub Register(context As Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext)
         If context Is Nothing Then
-            Throw New System.ArgumentNullException("context")
+            Throw New System.ArgumentNullException(NameOf(context))
         End If
 
         Using key As Key = context.CreateKey(String.Format(System.Globalization.CultureInfo.InvariantCulture, "{0}\{1}",

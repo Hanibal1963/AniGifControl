@@ -1,3 +1,4 @@
+Imports System.Resources
 Imports System.Reflection
 Imports System.Runtime.CompilerServices
 Imports System.Runtime.InteropServices
@@ -11,7 +12,7 @@ Imports Microsoft.VisualBasic
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("Andreas Sauer")>
 <Assembly: AssemblyProduct("AniGifControl")>
-<Assembly: AssemblyCopyright("Copyright � Andreas Sauer 2023")>
+<Assembly: AssemblyCopyright("Copyright © Andreas Sauer 2023")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
 
@@ -30,7 +31,8 @@ Imports Microsoft.VisualBasic
 ' You can specify all the values or you can default the Build and Revision Numbers 
 ' by using the '*' as shown below:
 ' [assembly: AssemblyVersion("1.0.*")]
-<Assembly: AssemblyVersion("1.2023.2.62")>
-<Assembly: AssemblyFileVersion("1.2023.2.62")>
+<Assembly: AssemblyVersion("1.2023.2.63")>
+<Assembly: AssemblyFileVersion("1.2023.2.63")>
 
-<assembly: AssemblyInformationalVersion("0.2023.2.62")>
+<Assembly: AssemblyInformationalVersion("0.2023.2.63")>
+<Assembly: NeutralResourcesLanguage("de-DE")>

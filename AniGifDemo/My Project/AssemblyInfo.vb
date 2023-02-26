@@ -1,3 +1,4 @@
+Imports System.Resources
 Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
@@ -31,7 +32,8 @@ Imports System.Runtime.InteropServices
 ' indem Sie "*" wie unten gezeigt eingeben:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.2023.2.56")>
-<Assembly: AssemblyFileVersion("1.2023.2.56")>
+<Assembly: AssemblyVersion("1.2023.2.57")>
+<Assembly: AssemblyFileVersion("1.2023.2.57")>
 
-<assembly: AssemblyInformationalVersion("0.2023.2.56")>
+<Assembly: AssemblyInformationalVersion("0.2023.2.57")>
+<Assembly: NeutralResourcesLanguage("de-DE")>
