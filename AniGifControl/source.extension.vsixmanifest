@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="AniGifControl.20f461b4-4701-40e3-86c7-4fc327cf222d" Version="1.0.2023" Language="de-DE" Publisher="Andreas Sauer" />
         <DisplayName>AniGifControl</DisplayName>
-        <Description xml:space="preserve">Steuerelement zun anzeigen animierter GIF-Grafiken.</Description>
+        <Description xml:space="preserve">Steuerelement zum anzeigen animierter GIF-Grafiken.</Description>
         <MoreInfo>https://github.com/Hanibal1963/AniGifControl</MoreInfo>
         <License>LICENSE.txt</License>
         <Icon>PapaSchlumpf.ico</Icon>
@@ -14,20 +14,11 @@
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Pro">
             <ProductArchitecture>amd64</ProductArchitecture>
-        </InstallationTarget>
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Community">
-            <ProductArchitecture>x86</ProductArchitecture>
-        </InstallationTarget>
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Pro">
-            <ProductArchitecture>x86</ProductArchitecture>
-        </InstallationTarget>
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
-            <ProductArchitecture>x86</ProductArchitecture>
         </InstallationTarget>
     </Installation>
     <Dependencies>

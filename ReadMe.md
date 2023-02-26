@@ -5,8 +5,10 @@ Steuerelement zum anzeigen animierter GIF-Grafiken.
 
 ## Einführung
 
-Grundlage und Anregung für diesen Code stammen aus dem Buch 
+Grundlage und Anregung für dieses Control stammen aus dem Buch 
 **"Visual Basic 2015 - Grundlagen und Profiwissen"** von Walter Dobrenz und Thomas Gewinnus.
+
+Der urspüngliche Quelltext wurde von mir verändert und um weitere Funktionen erweitert.
 
 Dieser Code sollte für mich als Übung dienen und ich denke das er auch für andere Anfänger 
 interessant sein dürfte.
