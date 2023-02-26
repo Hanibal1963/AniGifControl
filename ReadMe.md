@@ -1,4 +1,4 @@
-## AniGifcontrol
+## AniGifControl
 
 Steuerelement zum anzeigen animierter GIF-Grafiken.
 
@@ -33,6 +33,10 @@ Die Eigenschaft **"GifSizeMode"** kann folgende Werte annehmen:
 - **CenterImage** - Die Grafik wird in Originalgröße angezeigt (zentrierte Ausrichtung)
 - **Zoom** - Die Grafik wird an die Größe des Steuerelementes angepasst (Die größere Ausdehnung der Grafik wird als Anpassung verwendet, die Ausrichtung erfolgt zentriert und das Seitenverhältnis bleibt erhalten)
 
+## geplante Änderungen und Funktionen
+
+- [ ] Anpassen des ToolBox - Symbols
+- [ ] Einbinden der Eigenschaft **Padding**
 
 ## Weitere Literatur
 

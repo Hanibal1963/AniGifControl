@@ -1,4 +1,11 @@
-﻿
+﻿'
+'****************************************************************************************************************
+'ProvideToolboxControlAttribute.vb
+'(c) 2023 by Andreas Sauer
+'****************************************************************************************************************
+'
+
+
 ''' <summary>
 ''' Dieses Attribut fügt einen Toolbox Controls Installer-Schlüssel für die Assembly hinzu, 
 ''' um Toolbox-Steuerelemente aus der Assembly zu installieren.

@@ -23,7 +23,7 @@ Public Enum GifSizeMode
 	''' Die Grafik wird in Originalgröße angezeigt.
 	''' </summary>
 	''' <remarks>
-	''' zeintrierte Ausrichtung.
+	''' zentrierte Ausrichtung.
 	''' </remarks>
 	CenterImage = 1
 
@@ -31,7 +31,7 @@ Public Enum GifSizeMode
 	''' Die Grafik wird an die Größe des Controls angepasst.
 	''' </summary>
 	''' <remarks>
-	''' Ausrichtung oben links.
+	''' zentrierte Ausrichtung
 	''' </remarks>
 	Zoom = 2
 
