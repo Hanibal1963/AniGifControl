@@ -3,7 +3,7 @@
   <PropertyGroup>
     <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <AssemblyVersion>1.2023.2.40</AssemblyVersion>
+    <AssemblyVersion>1.2023.2.50</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -119,10 +119,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AniGif.bmp" />
+    <EmbeddedResource Include="Resources\AniGif.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Standard.gif" />
+    <EmbeddedResource Include="Resources\Standard.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

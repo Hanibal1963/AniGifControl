@@ -23,7 +23,6 @@ Partial Class FormMain
 	<System.Diagnostics.DebuggerStepThrough()>
 	Private Sub InitializeComponent()
 		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMain))
-		Me.AniGif1 = New SchlumpfSoft.Controls.AniGif()
 		Me.CheckBox1 = New System.Windows.Forms.CheckBox()
 		Me.Button1 = New System.Windows.Forms.Button()
 		Me.Button2 = New System.Windows.Forms.Button()
@@ -32,17 +31,8 @@ Partial Class FormMain
 		Me.ComboBox2 = New System.Windows.Forms.ComboBox()
 		Me.Label2 = New System.Windows.Forms.Label()
 		Me.Label3 = New System.Windows.Forms.Label()
+		Me.AniGif1 = New SchlumpfSoft.Controls.AniGif()
 		Me.SuspendLayout()
-		'
-		'AniGif1
-		'
-		Me.AniGif1.AutoPlay = False
-		Me.AniGif1.Gif = CType(resources.GetObject("AniGif1.Gif"), System.Drawing.Bitmap)
-		Me.AniGif1.GifSizeMode = SchlumpfSoft.Controls.GifSizeMode.Normal
-		Me.AniGif1.Location = New System.Drawing.Point(13, 20)
-		Me.AniGif1.Name = "AniGif1"
-		Me.AniGif1.Size = New System.Drawing.Size(183, 183)
-		Me.AniGif1.TabIndex = 0
 		'
 		'CheckBox1
 		'
@@ -118,6 +108,16 @@ Partial Class FormMain
 		Me.Label3.Size = New System.Drawing.Size(57, 13)
 		Me.Label3.TabIndex = 8
 		Me.Label3.Text = "Anzeigeart"
+		'
+		'AniGif1
+		'
+		Me.AniGif1.AutoPlay = False
+		Me.AniGif1.Gif = CType(resources.GetObject("AniGif1.Gif"), System.Drawing.Bitmap)
+		Me.AniGif1.GifSizeMode = SchlumpfSoft.Controls.GifSizeMode.Normal
+		Me.AniGif1.Location = New System.Drawing.Point(13, 20)
+		Me.AniGif1.Name = "AniGif1"
+		Me.AniGif1.Size = New System.Drawing.Size(183, 180)
+		Me.AniGif1.TabIndex = 0
 		'
 		'FormMain
 		'

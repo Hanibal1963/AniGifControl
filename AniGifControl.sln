@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AniGifControl", "AniGifControl\AniGifControl.vbproj", "{2E0DF38C-76DE-4BAA-8631-A07E4B81AF47}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AniGifDemo", "AniGifDemo\AniGifDemo.vbproj", "{3180466F-2B01-4BD7-8D8A-84091996E977}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2E0DF38C-76DE-4BAA-8631-A07E4B81AF47} = {2E0DF38C-76DE-4BAA-8631-A07E4B81AF47}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{AE1390A1-C39A-4AAE-9E30-280E8076C3C3}"
 	ProjectSection(SolutionItems) = preProject

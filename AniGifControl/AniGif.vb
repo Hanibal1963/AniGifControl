@@ -286,34 +286,37 @@ Public Class AniGif
 		Dim g As System.Drawing.Graphics = e.Graphics
 
 		'Variablen zur Bildberechnung
-		Dim startpoint As System.Drawing.Point
 		Dim startsize As System.Drawing.Size
+		Dim startpoint As System.Drawing.Point
 		Dim destrec As System.Drawing.Rectangle
 
 		'Bildgröße und Startpunkt in Abhängikeit vom Zeichenodus berechnen
 		Select Case _GifSizeMode
 
-			'wenn Bild unverändert angezeigt wird (Bild in Originalgröße und links oben)
+			'Startpunkt und Größe berechnen wenn Bild unverändert angezeigt wird
+			'(Bild in Originalgröße und links oben)
 			Case GifSizeMode.Normal
-				startpoint = New System.Drawing.Point(0, 0)
 				startsize = _Gif.Size
-				destrec = New System.Drawing.Rectangle(startpoint, startsize)
+				startpoint = New System.Drawing.Point(0, 0)
 
-			'wenn Bild zentriert wird (Bild in Originalgröße und zentriert)
+			'Startpunkt und Größe berechnen wenn Bild zentriert wird
+			'(Bild in Originalgröße und zentriert)
 			Case GifSizeMode.CenterImage
-				startpoint = New System.Drawing.Point(CInt((Width - _Gif.Width) / 2), CInt((Height - _Gif.Height) / 2))
 				startsize = _Gif.Size
-				destrec = New System.Drawing.Rectangle(startpoint, startsize)
+				startpoint = New System.Drawing.Point(CInt((Width - _Gif.Width) / 2), CInt((Height - _Gif.Height) / 2))
 
-			'wenn das Bild gezoomt wird (Bild angepasst und Seitenverhältnis unverändert)
+			'Startpunkt und Größe berechnen wenn das Bild gezoomt wird
+			'(Bild angepasst und Seitenverhältnis unverändert)
 			Case GifSizeMode.Zoom
-				startpoint = New System.Drawing.Point(0, 0)
 				startsize = If(_Gif.Height > _Gif.Width,
 					New System.Drawing.Size(CInt(Height / CDec(_Gif.Height / _Gif.Width)), Height),
 					New System.Drawing.Size(Width, CInt(Width * CDec(_Gif.Height / _Gif.Width))))
-				destrec = New System.Drawing.Rectangle(startpoint, startsize)
+				startpoint = New System.Drawing.Point(CInt((Width - startsize.Width) / 2), CInt((Height - startsize.Height) / 2))
 
 		End Select
+
+		'neue Zeichenfläche festlegen
+		destrec = New System.Drawing.Rectangle(startpoint, startsize)
 
 		'Bild zeichnen
 		g.DrawImage(_Gif, destrec)

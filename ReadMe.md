@@ -29,7 +29,7 @@ Die Eigenschaft **"GifSizeMode"** kann folgende Werte annehmen:
 
 - **Normal** - Die Grafik wird in Originalgröße angezeigt (Ausrichtung oben links)
 - **CenterImage** - Die Grafik wird in Originalgröße angezeigt (zentrierte Ausrichtung)
-- **Zoom** - Die Grafik wird an die Größe des Steuerelementes angepasst (Ausrichtung oben links, die größere Ausdehnung der Grafik wird als Anpassung verwendet und das Seitenverhältnis bleibt erhalten)
+- **Zoom** - Die Grafik wird an die Größe des Steuerelementes angepasst (Die größere Ausdehnung der Grafik wird als Anpassung verwendet, die Ausrichtung erfolgt zentriert und das Seitenverhältnis bleibt erhalten)
 
 
 ## Weitere Literatur
