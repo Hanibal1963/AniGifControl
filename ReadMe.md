@@ -1,4 +1,4 @@
-## AniGifcontrol
+## AniGifControl
 
 Steuerelement zum anzeigen animierter GIF-Grafiken.
 
