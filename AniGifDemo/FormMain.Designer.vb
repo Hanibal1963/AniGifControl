@@ -112,6 +112,8 @@ Partial Class FormMain
 		'AniGif1
 		'
 		Me.AniGif1.AutoPlay = False
+		Me.AniGif1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+		Me.AniGif1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
 		Me.AniGif1.Gif = CType(resources.GetObject("AniGif1.Gif"), System.Drawing.Bitmap)
 		Me.AniGif1.GifSizeMode = SchlumpfSoft.Controls.GifSizeMode.Normal
 		Me.AniGif1.Location = New System.Drawing.Point(12, 12)

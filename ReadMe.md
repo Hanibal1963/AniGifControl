@@ -35,7 +35,7 @@ Die Eigenschaft **"GifSizeMode"** kann folgende Werte annehmen:
 
 ## geplante Änderungen und Funktionen
 
-- [ ] Anpassen des ToolBox - Symbols.
+- [X] Anpassen des ToolBox - Symbols.
 - [ ] Einbinden der Eigenschaft **"Padding"**.
 - [ ] Ereignis hinzufügen welches ausgelöst wird wenn das Bild nicht animiert ist.
 
