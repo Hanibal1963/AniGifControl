@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="AniGifControl.20f461b4-4701-40e3-86c7-4fc327cf222d" Version="1.0.2023" Language="de-DE" Publisher="Andreas Sauer" />
+        <Identity Id="AniGifControl.20f461b4-4701-40e3-86c7-4fc327cf222d" Version="1.1.2023" Language="de-DE" Publisher="Andreas Sauer" />
         <DisplayName>AniGifControl</DisplayName>
         <Description xml:space="preserve">Steuerelement zum anzeigen animierter GIF-Grafiken.</Description>
         <MoreInfo>https://github.com/Hanibal1963/AniGifControl</MoreInfo>

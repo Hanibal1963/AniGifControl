@@ -49,6 +49,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NotifyFormControl">
+      <HintPath>c:\users\andre\appdata\local\microsoft\visualstudio\17.0_89f88a3d\extensions\ohc2yrcl.ox2\NotifyFormControl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
