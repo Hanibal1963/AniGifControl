@@ -5,7 +5,9 @@
 '****************************************************************************************************************
 
 
+
 <ProvideToolboxControl("SchlumpfSoft", False)>
+<System.ComponentModel.ToolboxItem(True)>
 <System.ComponentModel.Description("Control zum anzeigen von animierten Grafiken.")>
 Public Class AniGif
 
