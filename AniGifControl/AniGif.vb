@@ -59,6 +59,23 @@ Public Class AniGif
 	''' </remarks>
 	<System.ComponentModel.Browsable(False)>
 	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
+	Public Overloads Property Padding As System.Windows.Forms.Padding
+		Get
+			Return MyBase.Padding
+		End Get
+		Set(value As System.Windows.Forms.Padding)
+			MyBase.Padding = value
+		End Set
+	End Property
+
+	''' <summary>
+	''' Diese Eigenschaft ist für diese Klasse nicht relevant.
+	''' </summary>
+	''' <remarks>
+	''' Eigenschaft ausgeblendet
+	''' </remarks>
+	<System.ComponentModel.Browsable(False)>
+	<System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)>
 	Public Overrides Property AllowDrop() As Boolean
 		Get
 			Return MyBase.AllowDrop
@@ -511,12 +528,6 @@ Public Class AniGif
 		Invalidate()
 
 	End Sub
-
-#End Region
-
-
-#Region "Enums"
-
 
 #End Region
 
