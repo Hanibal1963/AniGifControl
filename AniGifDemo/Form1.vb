@@ -16,14 +16,10 @@ Public Class Form1
         Me.InitializeComponent()
 
         'Fügen Sie Initialisierungen nach dem InitializeComponent()-Aufruf hinzu.
-        Me.AniGif1.AutoPlay = False 'kein automatischer Start
-        Me.AniGif1.GifSizeMode = SizeMode.Normal 'normale Ansicht
-        Me.AniGif1.CustomDisplaySpeed = False 'keine Benutzerdefinierte Geschwindigkeit
-        Me.AniGif1.FramesPerSecond = 6 'vordefinierter Wert für Bilder/Sekunde
         Me.ComboBoxAnsicht.SelectedIndex = 0 'Standardanimation
         Me.NumericUpDownFramesPerSecond.Value = Me.AniGif1.FramesPerSecond 'Standardwert für benutzerdefinierte Anzeigegeschwindigkeit 
         Me.NumericUpDownZoomFactor.Value = Me.AniGif1.ZoomFactor 'Standardwert für Zoom
-        Me.CheckBoxAutoplay.Checked = False 'kein automatischer Start
+        Me.CheckBoxAutoplay.Checked = Me.AniGif1.AutoPlay 'kein automatischer Start
         Me.ButtonBack.Enabled = False
         Me.ChangeAni()
 
@@ -93,8 +89,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub AniGif1_NoAnimation(sender As Object, e As EventArgs) Handles _
-        AniGif1.NoAnimation
+    Private Sub AniGif1_NoAnimation(sender As Object, e As EventArgs) 
 
         Dim prompt As String = $"Das Bild kann nicht animiert werden."
         Dim title As String = $"Keine Animation"
@@ -109,6 +104,7 @@ Public Class Form1
             Case Is <> 0 : Me.LabelAni.Text = String.Format("Animation Nr.: {0}", Me._Ani.ToString)
             Case Else : Me.LabelAni.Text = $"Standardanimation"
         End Select
+
         'Animation schalten
         Select Case Me._Ani
             Case Is <> 0 : Me.AniGif1.Gif = CType(My.Resources.ResourceManager.GetObject("Anim" & CStr(100 + Me._Ani - 1)), Bitmap)
