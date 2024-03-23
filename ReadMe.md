@@ -51,6 +51,7 @@ Die Eigenschaft **"GifSizeMode"** kann folgende Werte annehmen:
 
 - [X] Funktion für das festlegen einer benutzerdefinierten Anzeigegeschwindigkeit.
 - [X] Funktion für das ändern des Zoomfaktors wenn der Anzeigemodus Zoom ist.
+- [ ] Funktion zum gefüllen Anzeigen der Grafik unabhängig von der Originalgröße.
 
 ---
 

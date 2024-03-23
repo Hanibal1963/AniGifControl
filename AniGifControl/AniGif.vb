@@ -182,63 +182,26 @@ Public Class AniGif
 
         MyBase.OnPaint(e)
 
-        'variable für Zeichenfläche
+        'Variable für Zeichenfläche
         Dim g As Graphics = e.Graphics
-        Dim destrec As Rectangle
 
-        'Variablen zur Bildberechnung
-        Dim startpoint As Point
-        Dim startsize As Size
+        'Größe der Zeichenfläche berechnen
+        Dim rectstartsize As Size = GetRectStartSize(
+            _GifSizeMode, Me, _Gif, _ZoomFactor / 100)
 
-        'aktuelle Werte des Bildes
-        Dim gifw As Integer = _Gif.Size.Width
-        Dim gifh As Integer = _Gif.Size.Height
-        Dim zoom As Decimal = _ZoomFactor / 100
+        'Startpunkt der Zeichenfläche berechnen
+        Dim rectstartpoint As Point = GetRectStartPoint(
+            _GifSizeMode, Me, _Gif, rectstartsize)
 
-        'Bildgröße und Startpunkt in Abhängikeit vom Zeichenodus berechnen
-        Select Case _GifSizeMode
-
-            Case SizeMode.Normal '(Bild in Originalgröße und links oben)
-
-                'Größe berechnen
-                startsize = New Size(gifw, gifh)
-
-                'Startpunkt berechnen 
-                startpoint = New Point(0, 0)
-
-            Case SizeMode.CenterImage '(Bild in Originalgröße und zentriert)
-
-                'Größe berechnen
-                startsize = New Size(gifw, gifh)
-
-                'Startpunkt berechnen
-                startpoint = New Point(CInt((Me.Width - _Gif.Width) / 2), CInt((Me.Height - _Gif.Height) / 2))
-
-            Case SizeMode.Zoom '(Bild angepasst und Seitenverhältnis unverändert)
-
-                'Größe berechnen
-                If gifh > gifw Then
-                    'Anpassung wenn Bild höher als breit
-                    startsize = New Size(CInt(Me.Height / CDec(gifh / gifw) * zoom), CInt(Me.Height * zoom))
-                Else
-                    'Anpassung wenn Bild breiter als hoch
-                    startsize = New Size(CInt(Me.Width * zoom), CInt(Me.Width * CDec(gifh / gifw) * zoom))
-                End If
-
-                'Startpunkt berechnen
-                startpoint = New Point(CInt((Me.Width - startsize.Width) / 2), CInt((Me.Height - startsize.Height) / 2))
-
-            Case Else
-
-        End Select
-
-        'neue Zeichenfläche festlegen und Bild zeichnen
-        destrec = New Rectangle(startpoint, startsize)
-        g.DrawImage(_Gif, destrec)
+        'Zeichenfläche festlegen und Bild zeichnen
+        g.DrawImage(_Gif, New Rectangle(rectstartpoint, rectstartsize))
 
         'Bild animieren wenn AutoPlay aktiv und Benutzerdefinierte Geschwindigkeit deaktiviert
         If Not Me.DesignMode And Me.AutoPlay And Not Me.CustomDisplaySpeed Then
-            ImageAnimator.UpdateFrames() 'im Bild gespeicherte Geschwindigkeit verwenden
+
+            'im Bild gespeicherte Geschwindigkeit verwenden
+            ImageAnimator.UpdateFrames()
+
         End If
 
     End Sub
