@@ -146,7 +146,7 @@ Partial Class Form1
         Me.AniGif1.Name = "AniGif1"
         Me.AniGif1.Size = New System.Drawing.Size(229, 237)
         Me.AniGif1.TabIndex = 7
-        Me.AniGif1.ZoomFactor = 100
+        Me.AniGif1.ZoomFactor = 50
         '
         'LabelZoomFactor
         '
