@@ -65,6 +65,7 @@ Public Class Form1
             Case 0 : Me.AniGif1.GifSizeMode = SizeMode.Normal
             Case 1 : Me.AniGif1.GifSizeMode = SizeMode.CenterImage
             Case 2 : Me.AniGif1.GifSizeMode = SizeMode.Zoom
+            Case 3 : Me.AniGif1.GifSizeMode = SizeMode.Fill
         End Select
 
     End Sub

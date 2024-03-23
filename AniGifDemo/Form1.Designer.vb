@@ -74,7 +74,7 @@ Partial Class Form1
         'ComboBoxAnsicht
         '
         Me.ComboBoxAnsicht.FormattingEnabled = True
-        Me.ComboBoxAnsicht.Items.AddRange(New Object() {"Normal", "Zentriert", "Zoom"})
+        Me.ComboBoxAnsicht.Items.AddRange(New Object() {"Normal", "Zentriert", "Zoom", "Fill"})
         Me.ComboBoxAnsicht.Location = New System.Drawing.Point(316, 12)
         Me.ComboBoxAnsicht.Name = "ComboBoxAnsicht"
         Me.ComboBoxAnsicht.Size = New System.Drawing.Size(116, 21)
