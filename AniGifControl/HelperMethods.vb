@@ -15,8 +15,8 @@ Module HelperMethods
         _Autoplay = False 'Standardeinstellung für AutoPlay
         _GifSizeMode = SizeMode.Normal 'Standarddarstellung für Grafik
         _CustomDisplaySpeed = False
-        _FramesPerSecond = 6
-        _ZoomFactor = 100  'Standardeinstellung für Zoomfaktor
+        _FramesPerSecond = 10
+        _ZoomFactor = 50  'Standardeinstellung für Zoomfaktor
     End Sub
 
     ''' <summary>Prüft den Wert für Bilder/Sekunde</summary>

@@ -25,8 +25,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim LabelAnsicht As System.Windows.Forms.Label
         Dim LabelFramesPerSecond As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Dim LabelZoomFactor As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ComboBoxAnsicht = New System.Windows.Forms.ComboBox()
         Me.CheckBoxAutoplay = New System.Windows.Forms.CheckBox()
         Me.LabelAni = New System.Windows.Forms.Label()
@@ -34,8 +34,8 @@ Partial Class Form1
         Me.ButtonForward = New System.Windows.Forms.Button()
         Me.CheckBoxCustomDisplaySpeed = New System.Windows.Forms.CheckBox()
         Me.NumericUpDownFramesPerSecond = New System.Windows.Forms.NumericUpDown()
-        Me.AniGif1 = New SchlumpfSoft.Controls.AniGifControl.AniGif()
         Me.NumericUpDownZoomFactor = New System.Windows.Forms.NumericUpDown()
+        Me.AniGif1 = New SchlumpfSoft.Controls.AniGifControl.AniGif()
         LabelAnsicht = New System.Windows.Forms.Label()
         LabelFramesPerSecond = New System.Windows.Forms.Label()
         LabelZoomFactor = New System.Windows.Forms.Label()
@@ -61,6 +61,15 @@ Partial Class Form1
         LabelFramesPerSecond.Size = New System.Drawing.Size(81, 13)
         LabelFramesPerSecond.TabIndex = 10
         LabelFramesPerSecond.Text = "Bilder/Sekunde"
+        '
+        'LabelZoomFactor
+        '
+        LabelZoomFactor.AutoSize = True
+        LabelZoomFactor.Location = New System.Drawing.Point(256, 132)
+        LabelZoomFactor.Name = "LabelZoomFactor"
+        LabelZoomFactor.Size = New System.Drawing.Size(61, 13)
+        LabelZoomFactor.TabIndex = 11
+        LabelZoomFactor.Text = "Zoomfaktor"
         '
         'ComboBoxAnsicht
         '
@@ -135,28 +144,6 @@ Partial Class Form1
         Me.NumericUpDownFramesPerSecond.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left
         Me.NumericUpDownFramesPerSecond.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
-        'AniGif1
-        '
-        Me.AniGif1.AutoPlay = False
-        Me.AniGif1.CustomDisplaySpeed = False
-        Me.AniGif1.FramesPerSecond = New Decimal(New Integer() {6, 0, 0, 0})
-        Me.AniGif1.Gif = CType(resources.GetObject("AniGif1.Gif"), System.Drawing.Bitmap)
-        Me.AniGif1.GifSizeMode = SchlumpfSoft.Controls.AniGifControl.SizeMode.Normal
-        Me.AniGif1.Location = New System.Drawing.Point(11, 12)
-        Me.AniGif1.Name = "AniGif1"
-        Me.AniGif1.Size = New System.Drawing.Size(229, 237)
-        Me.AniGif1.TabIndex = 7
-        Me.AniGif1.ZoomFactor = 100
-        '
-        'LabelZoomFactor
-        '
-        LabelZoomFactor.AutoSize = True
-        LabelZoomFactor.Location = New System.Drawing.Point(256, 132)
-        LabelZoomFactor.Name = "LabelZoomFactor"
-        LabelZoomFactor.Size = New System.Drawing.Size(61, 13)
-        LabelZoomFactor.TabIndex = 11
-        LabelZoomFactor.Text = "Zoomfaktor"
-        '
         'NumericUpDownZoomFactor
         '
         Me.NumericUpDownZoomFactor.Location = New System.Drawing.Point(355, 129)
@@ -167,17 +154,30 @@ Partial Class Form1
         Me.NumericUpDownZoomFactor.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left
         Me.NumericUpDownZoomFactor.Value = New Decimal(New Integer() {100, 0, 0, 0})
         '
+        'AniGif1
+        '
+        Me.AniGif1.AutoPlay = False
+        Me.AniGif1.CustomDisplaySpeed = False
+        Me.AniGif1.FramesPerSecond = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.AniGif1.Gif = CType(resources.GetObject("AniGif1.Gif"), System.Drawing.Bitmap)
+        Me.AniGif1.GifSizeMode = SchlumpfSoft.Controls.AniGifControl.SizeMode.Normal
+        Me.AniGif1.Location = New System.Drawing.Point(8, 14)
+        Me.AniGif1.Name = "AniGif1"
+        Me.AniGif1.Size = New System.Drawing.Size(234, 240)
+        Me.AniGif1.TabIndex = 13
+        Me.AniGif1.ZoomFactor = New Decimal(New Integer() {50, 0, 0, 0})
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(445, 265)
+        Me.Controls.Add(Me.AniGif1)
         Me.Controls.Add(Me.NumericUpDownZoomFactor)
         Me.Controls.Add(LabelZoomFactor)
         Me.Controls.Add(LabelFramesPerSecond)
         Me.Controls.Add(Me.NumericUpDownFramesPerSecond)
         Me.Controls.Add(Me.CheckBoxCustomDisplaySpeed)
-        Me.Controls.Add(Me.AniGif1)
         Me.Controls.Add(Me.ButtonForward)
         Me.Controls.Add(Me.ButtonBack)
         Me.Controls.Add(Me.LabelAni)
@@ -198,10 +198,10 @@ Partial Class Form1
     Friend WithEvents LabelAni As Label
     Friend WithEvents ButtonBack As Button
     Friend WithEvents ButtonForward As Button
-    Friend WithEvents AniGif1 As Controls.AniGifControl.AniGif
     Private WithEvents CheckBoxCustomDisplaySpeed As CheckBox
     Private WithEvents NumericUpDownFramesPerSecond As NumericUpDown
     Private WithEvents ComboBoxAnsicht As ComboBox
     Private WithEvents CheckBoxAutoplay As CheckBox
     Private WithEvents NumericUpDownZoomFactor As NumericUpDown
+    Private WithEvents AniGif1 As Controls.AniGifControl.AniGif
 End Class
