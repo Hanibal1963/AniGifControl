@@ -22,7 +22,7 @@ Public Class Form1
         Me.AniGif1.FramesPerSecond = 6 'vordefinierter Wert für Bilder/Sekunde
         Me.ComboBoxAnsicht.SelectedIndex = 0 'Standardanimation
         Me.NumericUpDownFramesPerSecond.Value = 6 'Standardwert für benutzerdefinierte Anzeigegeschwindigkeit 
-        Me.NumericUpDownZoomFactor.Value = 100 'Standardwert für Zoom
+        Me.NumericUpDownZoomFactor.Value = Me.AniGif1.ZoomFactor 'Standardwert für Zoom
         Me.CheckBoxAutoplay.Checked = False 'kein automatischer Start
         Me.ButtonBack.Enabled = False
         Me.ChangeAni()
