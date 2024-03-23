@@ -16,7 +16,9 @@ interessant sein dürfte.
 
 Weitere Infos unter: 
 
-[Autoren-Website von Walter Doberenz & Thomas Gewinnus](https://sites.google.com/site/dokobuch/home/dfsfs/vb-net-2015) 
+[HANSER Fachbuch](https://www.hanser-fachbuch.de/fachbuch/artikel/9783446446052) 
+
+[Buchleser freigegeben auf onedrive](https://onedrive.live.com/?id=root&cid=D73E81A6F971DBA7&qt=people&personId=de18bb46da92110)
 
 ---
 
