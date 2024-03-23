@@ -21,7 +21,7 @@ Public Class Form1
         Me.AniGif1.CustomDisplaySpeed = False 'keine Benutzerdefinierte Geschwindigkeit
         Me.AniGif1.FramesPerSecond = 6 'vordefinierter Wert für Bilder/Sekunde
         Me.ComboBoxAnsicht.SelectedIndex = 0 'Standardanimation
-        Me.NumericUpDownFramesPerSecond.Value = 6 'Standardwert für benutzerdefinierte Anzeigegeschwindigkeit 
+        Me.NumericUpDownFramesPerSecond.Value = Me.AniGif1.FramesPerSecond 'Standardwert für benutzerdefinierte Anzeigegeschwindigkeit 
         Me.NumericUpDownZoomFactor.Value = Me.AniGif1.ZoomFactor 'Standardwert für Zoom
         Me.CheckBoxAutoplay.Checked = False 'kein automatischer Start
         Me.ButtonBack.Enabled = False
