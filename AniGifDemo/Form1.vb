@@ -90,7 +90,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub AniGif1_NoAnimation(sender As Object, e As EventArgs) 
+    Private Sub AniGif1_NoAnimation(sender As Object, e As EventArgs) Handles AniGif1.NoAnimation
 
         Dim prompt As String = $"Das Bild kann nicht animiert werden."
         Dim title As String = $"Keine Animation"

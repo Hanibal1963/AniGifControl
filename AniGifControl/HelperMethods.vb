@@ -51,12 +51,18 @@ Module HelperMethods
         Select Case Mode
 
             Case SizeMode.Normal
+
+                'Zeichenflächengröße an Grafik anpassen
                 Return New Size(Gif.Size.Width, Gif.Size.Height)
 
             Case SizeMode.CenterImage
+
+                'Zeichenflächengröße an Grafik anpassen
                 Return New Size(Gif.Size.Width, Gif.Size.Height)
 
             Case SizeMode.Zoom
+
+                'Zeichenflächengröße laut Zoomwert anpassen
                 If Gif.Size.Width < Gif.Size.Height Then
 
                     'Anpassung wenn Bild höher als breit
@@ -70,6 +76,24 @@ Module HelperMethods
                     Return New Size(
                         CInt(Control.Width * Zoom),
                         CInt(Control.Width * CDec(Gif.Size.Height / Gif.Size.Width) * Zoom))
+
+                End If
+
+            Case SizeMode.Fill
+
+                'Zeichenflächengröße auf 100% des Controls anpassen
+                If Gif.Size.Width < Gif.Size.Height Then
+
+                    'Anpassung wenn Bild höher als breit
+                    Return New Size(
+                        CInt(Control.Height / CDec(Gif.Size.Height / Gif.Size.Width)),
+                        Control.Height)
+                Else
+
+                    'Anpassung wenn Bild breiter als hoch
+                    Return New Size(
+                        Control.Width,
+                        CInt(Control.Width * CDec(Gif.Size.Height / Gif.Size.Width)))
 
                 End If
 
@@ -101,6 +125,12 @@ Module HelperMethods
                                  CInt((Control.Height - Gif.Size.Height) / 2))
 
             Case SizeMode.Zoom
+
+                '
+                Return New Point(CInt((Control.Width - RectStartSize.Width) / 2),
+                                 CInt((Control.Height - RectStartSize.Height) / 2))
+
+            Case SizeMode.Fill
 
                 '
                 Return New Point(CInt((Control.Width - RectStartSize.Width) / 2),

@@ -40,6 +40,7 @@ Die Eigenschaft **"GifSizeMode"** kann folgende Werte annehmen:
 -  **Normal** - Die Grafik wird in Originalgröße angezeigt (Ausrichtung oben links)
 -  **CenterImage** - Die Grafik wird in Originalgröße angezeigt (zentrierte Ausrichtung)
 -  **Zoom** - Die Grafik wird an die Größe des Steuerelementes angepasst (Die größere Ausdehnung der Grafik wird als Anpassung verwendet, die Ausrichtung erfolgt zentriert und das Seitenverhältnis bleibt erhalten)
+-  **Fill** - Die Grafik wird in das Control eingepasst (unabhängig von ihrer Größe).
 
 ---
 
@@ -53,7 +54,7 @@ Die Eigenschaft **"GifSizeMode"** kann folgende Werte annehmen:
 
 - [X] Funktion für das festlegen einer benutzerdefinierten Anzeigegeschwindigkeit.
 - [X] Funktion für das ändern des Zoomfaktors wenn der Anzeigemodus Zoom ist.
-- [ ] Funktion zum gefüllen Anzeigen der Grafik unabhängig von der Originalgröße.
+- [x] Funktion zum gefüllten Anzeigen der Grafik unabhängig von der Originalgröße.
 
 ---
 
@@ -67,6 +68,12 @@ Die Eigenschaft **"GifSizeMode"** kann folgende Werte annehmen:
 ---
 
 ## History
+
+### Version 1.2024.0324.00
+
+Datum: 24.03.2024 - 4.Releaseversion
+
+Funktion zum gefüllten Anzeigen der Grafiken unabhängig von ihrer Originalgröße hinzugefügt.
 
 ### Version 1.2024.0322.00
 
@@ -84,4 +91,4 @@ Funktionen zum ändern der Anzeigegeschwindigkeit hinzugefügt.
 
 Datum: 28.01.2024 - 1.Releaseversion
 
-Alle noch eventuell vorherigen versionen sind experimenteller Natur.
+Alle noch eventuell vorherigen Versionen sind experimenteller Natur.

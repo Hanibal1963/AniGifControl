@@ -1,52 +1,70 @@
-﻿Imports System
+﻿' ****************************************************************************************************************
+' AniGifControlPackage.vb
+' © 2024 by Andreas Sauer
+' ****************************************************************************************************************
+'
+
+Imports System
 Imports System.Runtime.InteropServices
 Imports System.Threading
 Imports Microsoft.VisualStudio.Shell
 Imports System.Threading.Tasks
 
 
-''' <summary>
-''' This is the class that implements the package exposed by this assembly.
-''' </summary>
+''' <summary>Dies ist die Klasse, die das von dieser Assembly bereitgestellte Paket implementiert.</summary>
 ''' <remarks>
 ''' <para>
-''' The minimum requirement for a class to be considered a valid package for Visual Studio
-''' Is to implement the IVsPackage interface And register itself with the shell.
-''' This package uses the helper classes defined inside the Managed Package Framework (MPF)
-''' to do it: it derives from the Package Class that provides the implementation Of the 
-''' IVsPackage interface And uses the registration attributes defined in the framework to 
-''' register itself And its components with the shell. These attributes tell the pkgdef creation
-''' utility what data to put into .pkgdef file.
+''' Die Mindestanforderung dafür, dass eine Klasse als gültiges Paket für Visual Studio betrachtet wird, 
+''' besteht darin, die IVs-Paketschnittstelle zu implementieren und sich bei der Shell zu registrieren. 
+''' Dieses Paket verwendet dazu die im Managed Package Framework (MPF) definierten Hilfsklassen: 
+''' Es leitet sich von der Paketklasse ab, die die Implementierung der IVs-Paketschnittstelle bereitstellt, 
+''' und verwendet die im Framework definierten Registrierungsattribute, 
+''' um sich selbst und seine Komponenten zu registrieren die Muschel. 
+''' Diese Attribute teilen dem pkgdef-Erstellungsdienstprogramm mit, welche Daten in die .pkgdef-Datei 
+''' eingefügt werden sollen.
 ''' </para>
 ''' <para>
-''' To get loaded into VS, the package must be referred by &lt;Asset Type="Microsoft.VisualStudio.VsPackage" ...&gt; in .vsixmanifest file.
+''' Um in VS geladen zu werden, muss in der .vsixmanifest-Datei auf das Paket mit 
+''' &lt;Asset Type="Microsoft.Visual Studio.Vs Package" ...&gt; verwiesen werden.
 ''' </para>
 ''' </remarks>
 <PackageRegistration(UseManagedResourcesOnly:=True, AllowsBackgroundLoading:=True)>
 <Guid(AniGifControlPackage.PackageGuidString)>
 Public NotInheritable Class AniGifControlPackage
+
     Inherits AsyncPackage
 
-    ''' <summary>
-    ''' Package guid
-    ''' </summary>
+    ''' <summary>Package guid</summary>
     Public Const PackageGuidString As String = "3d2e432d-b0c9-4669-864b-c590b7b66371"
 
-#Region "Package Members"
-
     ''' <summary>
-    ''' Initialization of the package; this method is called right after the package is sited, so this is the place
-    ''' where you can put all the initialization code that rely on services provided by VisualStudio.
+    ''' Initialisierung des Pakets; 
+    ''' Diese Methode wird direkt nach der Platzierung des Pakets aufgerufen. 
+    ''' Daher können Sie hier den gesamten Initialisierungscode ablegen, der auf den von Visual Studio 
+    ''' bereitgestellten Diensten basiert.
     ''' </summary>
-    ''' <param name="cancellationToken">A cancellation token to monitor for initialization cancellation, which can occur when VS is shutting down.</param>
-    ''' <param name="progress">A provider for progress updates.</param>
-    ''' <returns>A task representing the async work of package initialization, or an already completed task if there is none. Do not return null from this method.</returns>
-    Protected Overrides Async Function InitializeAsync(cancellationToken As CancellationToken, progress As IProgress(Of ServiceProgressData)) As Task
-        ' When initialized asynchronously, the current thread may be a background thread at this point.
-        ' Do any initialization that requires the UI thread after switching to the UI thread.
-        Await Me.JoinableTaskFactory.SwitchToMainThreadAsync()
-    End Function
+    ''' <param name="cancellationToken">
+    ''' Ein Abbruchtoken zur Überwachung des Initialisierungsabbruchs, 
+    ''' der beim Herunterfahren von VS auftreten kann.
+    ''' </param>
+    ''' <param name="progress">
+    ''' Ein Anbieter für Fortschrittsaktualisierungen.
+    ''' </param>
+    ''' <returns>
+    ''' Eine Aufgabe, die die asynchrone Arbeit der Paketinitialisierung darstellt, 
+    ''' oder eine bereits abgeschlossene Aufgabe, wenn keine vorhanden ist. 
+    ''' Geben Sie von dieser Methode nicht null zurück.
+    ''' </returns>
+    Protected Overrides Async Function InitializeAsync(
+              cancellationToken As CancellationToken,
+              progress As IProgress(Of ServiceProgressData)) As Task
 
-#End Region
+        'Bei asynchroner Initialisierung kann der aktuelle Thread zu diesem Zeitpunkt
+        'ein Hintergrundthread sein.
+        'Führen Sie alle Initialisierungen durch, die den UI-Thread erfordern,
+        'nachdem Sie zum UI-Thread gewechselt haben.
+        Await Me.JoinableTaskFactory.SwitchToMainThreadAsync()
+
+    End Function
 
 End Class
